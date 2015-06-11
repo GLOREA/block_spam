@@ -45,7 +45,7 @@ JavaScript で値を操作したい場合は safix を取り除いた name を�
             </form>  
             <script>  
                 $(function(){  
-                    blockSpamMethods.init( { safix: "sample" } );  
+                    blockSpam.init( { safix: "sample" } );  
                 });  
             </script>  
         </body>  
