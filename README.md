@@ -22,8 +22,11 @@ name 属性の末尾に、オプションパラメータ safix で指定した�
 JavaScript で値を操作したい場合は safix を取り除いた name を指定してください。
 
 例：
+
     <input name="test_blocks_spam_dummy" type="text">
+
 の値を修正したい場合は
+
     $("input[name=test]").val("sample");
 
 ## Sample
