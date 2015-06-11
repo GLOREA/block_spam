@@ -1,19 +1,19 @@
-# Block Spams
+# Block Spam
 
 Form への機械入力を阻止する jQuery を利用したプラグイン。
 
 ## Usage
 jQuery 2.1.3 以上推奨
 
-プラグインを読み込み、DOMツリー構築完了後に blockSpamsMethods.init(); を実行してください。
+プラグインを読み込み、DOMツリー構築完了後に blockSpamMethods.init(); を実行してください。
 name 属性の末尾に、オプションパラメータ safix で指定した文字列が付いている input または textarea タグに対する機械入力を阻止します。
 送信されるパラメータの名称は safix を取り除いたものになります。
 
-例：test_block_spams_dummy → test
+例：test_block_spam_dummy → test
 
 ### Options
 * safix  
-    任意の文字列を指定します。デフォルト値は block_spams_dummy
+    任意の文字列を指定します。デフォルト値は block_spam_dummy
 * check_time  
     入力の監視時間を指定します。短ければ短いほど負荷が上がります。デフォルト値は 33
 
@@ -23,7 +23,7 @@ JavaScript で値を操作したい場合は safix を取り除いた name を�
 
 例：
 
-    <input name="test_block_spams_dummy" type="text">
+    <input name="test_block_spam_dummy" type="text">
 
 の値を修正したい場合は
 
@@ -35,7 +35,7 @@ JavaScript で値を操作したい場合は safix を取り除いた name を�
         <head>  
             <title>Sample</title>  
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>  
-            <script src="js/block_spams_min.js"></script>  
+            <script src="js/block_spam_min.js"></script>  
         </head>  
         <body>  
             <form>  
@@ -45,7 +45,7 @@ JavaScript で値を操作したい場合は safix を取り除いた name を�
             </form>  
             <script>  
                 $(function(){  
-                    blockSpamsMethods.init( { safix: "sample" } );  
+                    blockSpamMethods.init( { safix: "sample" } );  
                 });  
             </script>  
         </body>  
