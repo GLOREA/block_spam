@@ -1,5 +1,5 @@
-var blocksSpamMethods = {
-	_safix: "blocks_spam_dummy",
+var blockSpamsMethods = {
+	_safix: "block_spams_dummy",
 	_value_check_time: 33,			// 値変化の監視間隔
 	_hidden_forms: [],
 
